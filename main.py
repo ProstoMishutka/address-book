@@ -83,5 +83,5 @@ def main(string_path: str) -> None:
 
 
 if __name__ == "__main__":
-    str_path = r"D:/assistant-bot/app/contacts/contacts.bin"
+    str_path = r"./app/contacts/contacts.bin"
     main(str_path)
