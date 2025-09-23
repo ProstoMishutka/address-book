@@ -1,7 +1,5 @@
-class EmptyInputError(Exception):
-    def __init__(self, message: str) -> None:
-        self.message = message
-        super().__init__(self.message)
+from utils.errors import EmptyInputError
+from app.logs import logger
 
 
 class CLIHandler:
@@ -14,7 +12,9 @@ class CLIHandler:
         parts = self.user_input.split()
 
         if not parts:
+            logger.warning("User input is empty.")
             raise EmptyInputError("Input is empty. Input cannot be empty!")
 
         self.command = parts[0].lower().strip()
         self.args = parts[1:]
+        logger.info(f"Parsed user input: command, contact(args).")

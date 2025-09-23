@@ -1,4 +1,4 @@
 from .contact import Contact
-from .address_book import AddressBook, ContactNotFoundError
+from .address_book import AddressBook
 
-__all__ = ["Contact", "AddressBook", "ContactNotFoundError"]
+__all__ = ["Contact", "AddressBook"]
