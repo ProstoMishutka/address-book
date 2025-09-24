@@ -58,16 +58,13 @@ class FileHandler:
         :param address_book: AddressBook object containing contacts to update.
         :type address_book: AddressBook
         """
-
         self.data.update(address_book.data)
         logger.info(f"Updated local dictionary with new data (contacts).")
 
     def write_in_file(self) -> None:
         """
         Write the internal data dictionary to the file using pickle.
-
         """
-
         with self.path.open("wb") as file:
             pickle.dump(self.data, file)
             logger.info(f"Wrote data to file: {self.path}")

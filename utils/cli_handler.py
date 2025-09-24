@@ -17,7 +17,6 @@ class CLIHandler:
         The class stores the user input string and provides a method to split it
         into a command and a list of arguments.
         """
-
         self.user_input = user_input.strip()
         self.command = None
         self.args = None
@@ -30,7 +29,6 @@ class CLIHandler:
         and the remaining parts as arguments. Raises EmptyInputError if the input
         string is empty.
         """
-
         parts = self.user_input.split()
 
         if not parts:

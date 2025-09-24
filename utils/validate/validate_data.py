@@ -4,6 +4,16 @@ from app.logs import logger
 
 
 class ValidateData:
+    """
+    Class for validating commands and their arguments in the CLI Address Book application.
+
+    :ivar str command: The validated command
+    :ivar str | None first_name: First name parsed from arguments
+    :ivar str | None last_name: Last name parsed from arguments
+    :ivar str | None phone: Phone number parsed from arguments
+    :ivar str | None email: Email parsed from arguments
+    """
+
     ALLOWED_COMMANDS = [
         "exit",
         "q",
@@ -25,6 +35,14 @@ class ValidateData:
     EMAIL_PATTERN = r"^[\w\.-]+@[\w\.-]+\.[\w\.-]+$"
 
     def __init__(self, command: str, args: list) -> None:
+        """
+        Initialize a ValidateData instance and parse arguments.
+
+        :param command: The command entered by the user
+        :type command: str
+        :param args: List of arguments following the command
+        :type args: list
+        """
         self.command = self.validate_command(command)
         self.args = args
         self.first_name = None
@@ -35,6 +53,9 @@ class ValidateData:
         self.parse_args()
 
     def parse_args(self) -> None:
+        """
+        Parse command arguments and classify them into first name, last name, phone, or email.
+        """
         parts_name = []
 
         # Parse the command arguments and classify them into first name, last name, phone, or email.
@@ -70,6 +91,12 @@ class ValidateData:
 
     @staticmethod
     def validate_command(command: str) -> str:
+        """
+        Validate if the command exists in the allowed commands.
+
+        :param str command: The command to validate
+        :return str: The validated command
+        """
         if command not in ValidateData.ALLOWED_COMMANDS:
             logger.warning(f"Invalid command detected: '{command}'")
             raise InvalidCommandError(f'Entered command does not exist: "{command}".')

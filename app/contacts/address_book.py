@@ -27,7 +27,6 @@ class AddressBook(UserDict):
         :param contact: Contact object to be added
         :type contact: Contact
         """
-
         if contact.fullname in self.data:
             logger.warning(f"Contact {contact.fullname} already exists.")
             raise ValueError(f"Contact {contact.fullname} already exists.")
@@ -44,7 +43,6 @@ class AddressBook(UserDict):
         :param fullname: Full name of the Contact object to remove
         :type fullname: str
         """
-
         if fullname in self.data:
             del self.data[fullname]
         else:

@@ -17,7 +17,6 @@ class ValidatePath:
         :param file_path_str: The file path to validate.
         :type file_path_str: str | Path, optional
         """
-
         self.path = file_path_str
 
     def validate_path(self) -> None | Optional[Path]:
@@ -30,7 +29,6 @@ class ValidatePath:
         :returns: The validated Path object or None if an error occurred.
         :rtype: Path | None
         """
-
         try:
             self.path = Path(self.path)
         except OSError as e:

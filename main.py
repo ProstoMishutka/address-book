@@ -41,7 +41,6 @@ def main(string_path: str = None) -> None:
           insufficient or missing arguments, and contact not found.
         - Saves any changes to the contacts back to the file upon exit.
     """
-
     PROJECT_PATH = Path(__file__).resolve().parent
 
     if string_path is None:

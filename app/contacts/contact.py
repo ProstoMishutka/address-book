@@ -41,7 +41,6 @@ class Contact:
             - If both first_name and last_name are present, returns fullname as "first_name last_name".
             - If only first_name is present, returns fullname containing just the first_name.
         """
-
         if self.first_name and self.last_name:
             return f"{self.first_name} {self.last_name}"
 
@@ -53,7 +52,6 @@ class Contact:
 
         If any field of the Contact object is None, it is displayed as '-' in the output.
         """
-
         if self.fullname and self.phone and self.email:
             return (
                 f"Fullname : {self.fullname}\n"
