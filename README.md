@@ -1,4 +1,4 @@
-# 📒 Address Book CLI Application <a name="top"></a>
+# 📒 Address Book CLI Application
 
 A **command-line interface (CLI)** address book application built with Python.  
 It allows users to **add, search, edit, and delete contacts**, while securely storing data in a binary file (`contacts.bin`).  
@@ -199,4 +199,4 @@ You are free to use, modify, and distribute it.
 **Misha Patserkovskyi**  
 Beginner Python Developer 🚀
 
-[Back to top](#top)
+[Back to top](#address-book-cli-application)
