@@ -41,7 +41,7 @@ This project demonstrates:
 ---
 
 ## 🗂️ Project Structure
-
+```text
 📂 assistant-bot/
 ├── app/
 │   ├── contacts/
@@ -63,6 +63,7 @@ This project demonstrates:
 ├── main.py                    # точка входу програми
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
