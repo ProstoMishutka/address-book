@@ -5,6 +5,19 @@ from typing import Optional, Tuple
 
 
 def contact_factory(user_input: str) -> Tuple[Optional[str], Contact]:
+    """
+    Parses user input into a command and a list of arguments to create a Contact.
+
+    The function takes a raw user input string, splits it into a command and arguments,
+    validates them, and creates a Contact object from the arguments.
+
+    :param user_input: Raw input string from the user.
+    :type user_input: str
+    :return: A tuple containing the validated command (str or None) and
+            a Contact object created from the input arguments.
+    :rtype: Tuple[Optional[str], Contact]
+    """
+
     # Parsing the user input into a command and its arguments.
     cli = CLIHandler(user_input)
     cli.parse_input()

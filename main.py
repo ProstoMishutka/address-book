@@ -17,6 +17,31 @@ from utils.errors import (
 
 
 def main(string_path: str = None) -> None:
+    """
+    Main function to run the contact book application.
+
+    This function initializes the address book, handles file storage,
+    parses user input, validates commands and arguments, and executes
+    the corresponding actions via the CommandHandler. It supports
+    both command-line arguments and interactive input.
+
+    Args:
+        string_path (str, optional): The path to the directory where
+            the address book file (contacts.bin) will be saved.
+            If None, a default path within the project is used.
+
+    Behavior:
+        - Validates the given path (creates directories if missing).
+        - Reads existing contacts from the file or creates an empty dictionary.
+        - Initializes an AddressBook object and populates it with loaded contacts.
+        - Processes user input:
+            * If the program is launched with command-line arguments, executes the command immediately.
+            * If no command-line arguments are provided, enters an interactive loop for user commands.
+        - Handles exceptions such as empty input, invalid commands, invalid arguments,
+          insufficient or missing arguments, and contact not found.
+        - Saves any changes to the contacts back to the file upon exit.
+    """
+
     PROJECT_PATH = Path(__file__).resolve().parent
 
     if string_path is None:
