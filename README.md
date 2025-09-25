@@ -77,7 +77,7 @@ This project demonstrates:
 
 ---
 
-<h2 id="installation-running">💻 Installation & Running</h2> 
+<h2 id="installation--running">💻 Installation & Running</h2> 
 
 1. Clone the repository:
 ```bash
