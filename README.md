@@ -43,6 +43,7 @@ This project demonstrates:
 ---
 
 <h2 id="project-structure">🗂️ Project Structure</h2>
+
 ```text
 📂 assistant-bot/
 ├── app/
