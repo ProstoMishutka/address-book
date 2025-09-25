@@ -1,4 +1,4 @@
-# 📒 Address Book CLI Application
+# 📒 Address Book CLI Application <a name="top"></a>
 
 A **command-line interface (CLI)** address book application built with Python.  
 It allows users to **add, search, edit, and delete contacts**, while securely storing data in a binary file (`contacts.bin`).  
@@ -14,8 +14,10 @@ This project demonstrates:
 ## Contents
 - [Features](#features)
 - [Project Structure](#project-structure)
+- [Requirements](#requirements)
 - [Installation & Running](#installation--running)
 - [Command Examples](#command-examples)
+- [Example Of Saved File](#example-of-saved-file)
 - [Error Handling](#error-handling)
 - [Example Usage](#example-usage)
 - [Modularity](#modularity)
@@ -24,7 +26,7 @@ This project demonstrates:
 
 ---
 
-## 🚀 Features
+<h2 id="features">🚀 Features</h2>
 
 - **Add a new contact** with a first name, last name, phone, and/or email.
 - **Search contacts** by name to retrieve phone numbers or email addresses.
@@ -40,7 +42,7 @@ This project demonstrates:
 
 ---
 
-## 🗂️ Project Structure
+<h2 id="project-structure">🗂️ Project Structure</h2>
 ```text
 📂 assistant-bot/
 ├── app/
@@ -67,14 +69,14 @@ This project demonstrates:
 
 ---
 
-## ⚙️ Requirements
+<h2 id="requirements">⚙️ Requirements</h2>
 
 - Python 3.10+
 - No external libraries — only Python standard library is used.
 
 ---
 
-## 💻 Installation & Running
+<h2 id="installation-running">💻 Installation & Running</h2> 
 
 1. Clone the repository:
 ```bash
@@ -97,7 +99,7 @@ python main.py
 
 ---
 
-## 📝 Command Examples
+<h2 id="command-examples">📝 Command Examples</h2> 
 
 | Command                | Description                     | Example Usage                               |
 |------------------------|---------------------------------|---------------------------------------------|
@@ -112,7 +114,7 @@ python main.py
 
 ---
 
-## 📂 Example of Saved File
+<h2 id="example-of-saved-file">📂 Example of Saved File</h2> 📂 Example of Saved File
 
 Contacts are stored in **pickle** format in the file:
 ```text
@@ -122,7 +124,7 @@ This file is automatically created during the first run of the program.
 
 ---
 
-## ⚠️ Error Handling
+<h2 id="error-handling">⚠️ Error Handling</h2>
 
 The program uses a custom exception system:
 
@@ -137,7 +139,7 @@ The program uses a custom exception system:
 
 ---
 
-## 🧪 Example Usage
+<h2 id="example-usage">🧪 Example Usage</h2>
 
 1. Adding a contact
 ```text
@@ -174,7 +176,7 @@ Deleted contact: Jack Brown.
 
 ---
 
-## 🧩 Modularity
+<h2 id="modularity">🧩 Modularity</h2>
 
 The program is divided into logical modules:
 
@@ -187,16 +189,16 @@ The program is divided into logical modules:
 --- 
 
 
-## 🧾 License
+<h2 id="license">🧾 License</h2>
 
 This project is distributed under the **MIT License**.  
 You are free to use, modify, and distribute it.
 
 ---
 
-## 🤝 Author
+<h2 id="author">🤝 Author</h2>
 
 **Misha Patserkovskyi**  
 Beginner Python Developer 🚀
 
-[Back to top](#address-book-cli-application)
+[Back to top](#top)
