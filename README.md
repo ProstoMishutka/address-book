@@ -36,7 +36,7 @@ This project demonstrates:
 - **Persistent storage** using a binary file (`contacts.bin`).
 - **Interactive mode** or **single command-line execution**.
 - **Validation for input data**:
-  - Phone numbers must match: `+<country_code><number>` (e.g., `+1234567890`)
+  - Phone numbers must match: `+<country_code><number>` (e.g., `+123456789012`)
   - Emails must match a standard email format.
   - Names must contain only alphabetic characters, apostrophes, or hyphens.
 
@@ -143,10 +143,10 @@ The program uses a custom exception system:
 
 1. Adding a contact
 ```text
-> add Jack Brown +1234567890 jack@example.com
+> add Jack Brown +123456789012 jack@example.com
 Contact added:
 Fullname : Jack Brown
-Phone    : +1234567890
+Phone    : +123456789012
 Email    : jack@example.com
 -----------------------------------
 ```
