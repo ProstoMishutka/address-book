@@ -64,8 +64,7 @@ This project demonstrates:
 │   ├── cli_handler.py
 │   └── errors.py
 ├── main.py                    # точка входу програми
-├── README.md
-└── requirements.txt
+└── README.md
 ```
 
 ---
