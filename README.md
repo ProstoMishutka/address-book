@@ -50,10 +50,10 @@ This project demonstrates:
 │   ├── contacts/
 │   │   ├── contact.py
 │   │   ├── address_book.py
-│   │   └── contacts.bin       # файл збереження контактів
+│   │   └── contacts.bin       
 │   └── logs/
 │       ├── logger.py
-│       └── app.log            # лог-файл
+│       └── app.log            
 ├── utils/
 │   ├── validate/
 │   │   ├── validate_path.py
@@ -63,7 +63,7 @@ This project demonstrates:
 │   ├── command_handler.py
 │   ├── cli_handler.py
 │   └── errors.py
-├── main.py                    # точка входу програми
+├── main.py                   
 └── README.md
 ```
 
