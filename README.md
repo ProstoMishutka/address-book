@@ -81,7 +81,7 @@ This project demonstrates:
 1. Clone the repository:
 ```bash
 git clone https://github.com/ProstoMishutka/assistant-bot.git
-cd assistant-bot
+cd address-book
 ```
 
 2. (Optional) Create a virtual environment:
